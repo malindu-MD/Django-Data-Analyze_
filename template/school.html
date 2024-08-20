@@ -18,31 +18,20 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+             
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+        {% for school in schools %}
+        <tr>
+            <td>{{ school.id }}</td>
+            <td>{{ school.name }}</td>
+        </tr>
+        {% endfor %}
+
+           
           </tbody>
         </table>
       </div>
@@ -56,31 +45,19 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">ID</th>
+              <th scope="col">Class</th>
+             
             </tr>
           </thead>
           <tbody>
+            {% for class in classes %}
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+                <td>{{ class.id }}</td>
+                <td>{{ class.name }}</td>
             </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            {% endfor %}
+           
           </tbody>
         </table>
       </div>
@@ -92,31 +69,18 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">ID</th>
+              <th scope="col">FuLL Name</th>
             </tr>
           </thead>
           <tbody>
+            {% for student in students %}
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+                <td>{{ student.id }}</td>
+                <td>{{ student.fullname }}</td>
             </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            {% endfor %}
+          
           </tbody>
         </table>
       </div>
@@ -128,31 +92,19 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+       
             </tr>
           </thead>
           <tbody>
+            {% for area in assessment_areas %}
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+                <td>{{ area.id }}</td>
+                <td>{{ area.name }}</td>
             </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            {% endfor %}
+            
           </tbody>
         </table>
       </div>
@@ -164,67 +116,17 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
             </tr>
           </thead>
           <tbody>
+           {% for ans in answers %}
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+                <td>{{ ans.id }}</td>
+                <td>{{ ans.answer }}</td>
             </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="d-flex flex-column min-vh-90 mt-5  justify-content">
-      <div class="container">
-        <h2 class="text-center mb-4">Awards</h2>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            {% endfor %} 
           </tbody>
         </table>
       </div>
@@ -236,31 +138,45 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">ID</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Subject Score</th>
+           
             </tr>
           </thead>
           <tbody>
+          {% for sub in subjects %}
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+                <td>{{ sub.id }}</td>
+                <td>{{ sub.name }}</td>
+                <td>{{ sub.score }}</td>
             </tr>
+            {% endfor %} 
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column min-vh-90 mt-5  justify-content">
+      <div class="container">
+        <h2 class="text-center mb-4">Awards</h2>
+        <table class="table table-striped">
+          <thead>
             <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+        
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
             </tr>
+          </thead>
+          <tbody>
+            {% for award in awards %}
             <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
+                <td>{{ award.id }}</td>
+                <td>{{ award.name }}</td>
             </tr>
+            {% endfor %}
+           
           </tbody>
         </table>
       </div>
@@ -272,31 +188,49 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">school_id</th>
+              <th scope="col">sydney_participant</th>
+              <th scope="col">sydney_percentile</th>
+              <th scope="col">assessment_area_id</th>
+              <th scope="col">award_id</th>
+              <th scope="col">class_id</th>
+              <th scope="col">correct_answer_percentage_per_class</th>
+              <th scope="col">correct_answer</th>
+              <th scope="col">student_id</th>
+              <th scope="col">participant</th>
+              <th scope="col">student_score</th>
+              <th scope="col">subject_id</th>
+              <th scope="col">category_id</th>
+              <th scope="col">year_level_name</th>
+              <th scope="col">answer_id</th>
+              <th scope="col">correct_answer_id</th>
+             
             </tr>
           </thead>
           <tbody>
+
+            {% for sum in summaries %}
+
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td >{{ sum.school_id}}</td>
+              <td >{{ sum.sydney_participant}}</td>
+              <td >{{ sum.sydney_percentile}}</td>
+              <td >{{ sum.assessment_area_id}}</td>
+              <td >{{ sum.award_id}}</td>
+              <td >{{ sum.class_id}}</td>
+              <td >{{ sum.correct_answer_percentage_per_class}}</td>
+              <td >{{ sum.correct_answer}}</td>
+              <td>{{ sum.student_id}}</td>
+              <td >{{ sum.participant}}</td>
+              <td >{{ sum.student_score}}</td>
+              <td >{{ sum.subject_id}}</td>
+              <td >{{ sum.category_id}}</td>
+              <td >{{ sum.year_level_name}}</td>
+              <td >{{ sum.answer_id}}</td>
+              <td >{{ sum.correct_answer_id}}</td>
             </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            {% endfor %}
+           
           </tbody>
         </table>
       </div>
